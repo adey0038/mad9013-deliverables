@@ -9,12 +9,12 @@
 
 <body>
     <header>
-        <h1><a href="home">My Vacation Blog</a></h1>
+        <h1 id="home"><a href="#home">My Vacation Blog</a></h1>
         <nav>
             <ol>
-                <li><a href="post">Post</a></li>
-                <li><a href="about-me">About Me</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="#post">Post</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ol>
         </nav>
     </header>
@@ -27,7 +27,7 @@
             <a href="#">Read More</a>
         </section>
 
-        <section>
+        <section id="post">
             <h2>Recent Posts</h2>
             <ol>
                 <li>
@@ -54,29 +54,31 @@
                     <a href="#">Read More</a>
                 </li>
             </ol>
+        </section>
 
-            <section class="about-me">
-                <img src="./about.jpg" alt="Get to know me" />
-                <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, error quas? Ipsam, error optio ab
-                    at ipsa blanditiis nulla fugit laborum animi, nisi itaque. Aperiam minima alias deleniti pariatur dolorum!</p>
-            </section>
+        <section id="about-me">
+            <img src="./about.jpg" alt="Get to know me" />
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, error quas? Ipsam, error optio ab
+                at ipsa blanditiis nulla fugit laborum animi, nisi itaque. Aperiam minima alias deleniti pariatur
+                dolorum!</p>
+        </section>
 
-            <section>
-                <h2>Contact</h2>
-                <p>Interested in connecting with me?</p>
-                <a href="phone-number">613-123-6789</a>
-                <a href="e-mail">world@blog.com</a>
-            </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Interested in connecting with me?</p>
+            <a href="phone-number">613-123-6789</a>
+            <a href="e-mail">world@blog.com</a>
+        </section>
 
-            <nav>
-                <a href="home">My Vacation Blog</a>
-                <ol>
-                    <li><a href="post">Post</a></li>
-                    <li><a href="about-me">About Me</a></li>
-                    <li><a href="contact">Contact</a></li>
-                </ol>
-            </nav>
+        <nav>
+            <a href="#home">My Vacation Blog</a>
+            <ol>
+                <li><a href="#post">Post</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
+        </nav>
     </main>
     <footer>
         <p>&copy;2025 Algonquin College</p>
