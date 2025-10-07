@@ -132,13 +132,23 @@ a:hover {
 
 /* Medium Screens */
 @media screen and (min-width: 600px) {
-  :root {
-    --type-scale-h1: 2.5rem;
-    --type-scale-h2: 2rem;
-    --type-scale-h3: 1.5rem;
-    --type-scale-h4: 1.25rem;
-    --type-scale-h5: 1.1rem;
-    --type-scale-h6: 1rem;
+  .heading--main {
+    font-size: var(--type-scale-h1);
+  }
+  .heading--secondary {
+    font-size: var(--type-scale-h2);
+  }
+  .heading--three {
+    font-size: var(--type-scale-h3);
+  }
+  .heading--four {
+    font-size: var(--type-scale-h4);
+  }
+  .heading--five {
+    font-size: var(--type-scale-h5);
+  }
+  .heading--six {
+    font-size: var(--type-scale-h6);
   }
 
   .container {
@@ -149,13 +159,23 @@ a:hover {
 
 /* Large Screens */
 @media screen and (min-width: 900px) {
-  :root {
-    --type-scale-h1: 3.5rem;
-    --type-scale-h2: 3.2rem;
-    --type-scale-h3: 2.8rem;
-    --type-scale-h4: 2.3rem;
-    --type-scale-h5: 1.89rem;
-    --type-scale-h6: 1.5rem;
+  .heading--main {
+    font-size: var(--type-scale-h1);
+  }
+  .heading--secondary {
+    font-size: var(--type-scale-h2);
+  }
+  .heading--three {
+    font-size: var(--type-scale-h3);
+  }
+  .heading--four {
+    font-size: var(--type-scale-h4);
+  }
+  .heading--five {
+    font-size: var(--type-scale-h5);
+  }
+  .heading--six {
+    font-size: var(--type-scale-h6);
   }
 
   .container {
