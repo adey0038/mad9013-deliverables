@@ -204,7 +204,7 @@ for mad9013
     display: flex;
     justify-content: var(--banner-horizontal-align);
     align-items: var(--banner-vertical-align);
-    height: var(--banner-height);
+    min-height: var(--banner-height);
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url("../images/banner.jpg"); /* A little dark background */
     background-size: cover;
@@ -282,7 +282,7 @@ for mad9013
 
   /* Right Position */
   .banner--right {
-    padding: 15rem 8rem 15rem 0;
+    padding: 8rem 8rem 8rem 0;
     --banner-horizontal-align: flex-end;
     --banner-text-align: right;
   }
