@@ -1,0 +1,292 @@
+@layer reset, layout;
+
+@layer reset {
+  /*
+CSS Reset
+Adapted from: https://piccalil.li/blog/a-more-modern-css-reset/
+for mad9013
+*/
+  :root {
+    --color-primary: #394a59;
+    --color-primary-light: #59758d;
+    --color-secondary: #36bf7f;
+    --color-secondary-light: #75d3a7;
+    --color-secondary-dark: #1c5e3e;
+    --color-secondary-pale: #def4e9;
+    --color-accent: #d96666;
+  }
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* Set core root defaults */
+  html {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    line-height: 1.5;
+  }
+
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+  /* Remove default margin in favour of better control in authored CSS */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  figure,
+  blockquote,
+  ol,
+  ul,
+  dl,
+  dd {
+    margin: 0 0 1.5rem;
+  }
+
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role="list"],
+  ol[role="list"] {
+    list-style: none;
+  }
+
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    margin: 0;
+  }
+
+  /* Set shorter line heights on headings and interactive elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  button,
+  input,
+  label {
+    line-height: 1.1;
+  }
+
+  /* Balance text wrapping on headings */
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: var(--color-secondary);
+  }
+
+  a:not([class]):hover,
+  a:not([class]):focus-visible {
+    color: var(--color-accent);
+  }
+
+  /* Make images easier to work with */
+  img,
+  picture,
+  svg {
+    max-width: 100%;
+    display: block;
+  }
+
+  svg {
+    fill: currentColor;
+  }
+
+  svg:not(:root) {
+    overflow: hidden;
+  }
+
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  /* Update default button cursor to indicate interactivity */
+  button {
+    cursor: pointer;
+  }
+
+  /* Make sure textareas without a rows attribute are not tiny */
+  textarea:not([rows]) {
+    min-height: 10rem;
+  }
+
+  /* Anything that has been anchored to should have extra scroll margin */
+  :target {
+    scroll-margin-block: 3rem;
+  }
+
+  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer layout {
+  /* --------- Containers --------- */
+  .container {
+    width: min(65em, 100%);
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .container--text {
+    width: min(45em, 100%);
+  }
+
+  /* ------- Typography -------- */
+  h1 {
+    font-size: 2.019rem;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: 1.756rem;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 1.525rem;
+    color: var(--color-secondary-dark);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: 1.325rem;
+    color: var(--color-accent);
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  h5 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    line-height: 1.3;
+  }
+
+  h6 {
+    font-size: 1.2rem;
+  }
+
+  /* ------ Link Banners ----- */
+  .link-banners__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .link-banners__item {
+    flex: 1 1 20rem;
+    container-type: inline-size;
+  }
+
+  .link-banners__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    color: #fff;
+    text-decoration: none;
+
+    background-image: var(--bg-image, url("./../images/ottawa.jpg")),
+      linear-gradient(to bottom, #0000 40%, #000c);
+    background-size: cover;
+    background-position: center;
+    padding: 1.5rem;
+    aspect-ratio: 4 / 6;
+  }
+
+  .link-banners__link:is(:hover, :focus) {
+    color: #fff;
+  }
+
+  @container (min-width: 35em) {
+    .link-banners__link {
+      aspect-ratio: 6 / 4;
+    }
+  }
+
+  @container (min-width: 50em) {
+    .link-banners__link {
+      aspect-ratio: 3 / 1;
+    }
+  }
+
+  .link-banners__title {
+    margin: 0;
+    font-size: clamp(2.019rem, 7.5cqi, 3.056rem);
+  }
+
+  .icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: 0.2s;
+  }
+
+  .link-banners__link:is(:hover, :focus) .icon {
+    gap: 1rem;
+    color: var(--color-secondary);
+  }
+}
+
+@layer other {
+  @media only screen and (min-width: 60em) {
+    h1 {
+      font-size: 3.056rem;
+    }
+
+    h2 {
+      font-size: 2.444rem;
+    }
+
+    h3 {
+      font-size: 1.956rem;
+    }
+
+    h4 {
+      font-size: 1.563rem;
+    }
+
+    h5 {
+      font-size: 1.25rem;
+    }
+  }
+}
