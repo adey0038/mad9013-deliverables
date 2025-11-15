@@ -27,13 +27,14 @@
             </div>
 
             <div class="form-unit full two-cols">
-              <label class="required" for="email">Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-
-            <div class="form-unit full two-cols">
-              <label class="required" for="tel">Phone</label>
-              <input type="tel" id="tel" name="tel" required />
+              <div class="field-group">
+                <label class="required" for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="field-block">
+                <label class="required" for="tel">Phone</label>
+                <input type="tel" id="tel" name="tel" required />
+              </div>
             </div>
 
             <div class="form-unit">
@@ -76,13 +77,11 @@
               <textarea id="message" name="message" required></textarea>
             </div>
 
-            <div class="form-unit">
-              <div class="checkbox-wrap">
-                <input type="checkbox" id="terms" name="terms" required />
-                <label for="terms"
-                  >I consent to the <a href="#">Terms and Services</a>
-                </label>
-              </div>
+            <div class="form-unit full checkbox-line">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms"
+                >I consent to the <a href="#">Terms and Services</a>
+              </label>
             </div>
 
             <div class="form-unit">
