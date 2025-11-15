@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>08 - Sign Up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <section class="sign-up">
+      <div class="container">
+        <div class="sign-up__wrap">
+          <form action="#" class="sign-up__form">
+            <div class="form-unit">
+              <h1 class="sign-up__title">Contact Us</h1>
+            </div>
+            <div class="form-unit">
+              <label class="required" for="fName">Full Name</label>
+              <input type="text" id="fName" name="fName" required />
+            </div>
+
+            <div class="form-unit full two-cols">
+              <label class="required" for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-unit full two-cols">
+              <label class="required" for="tel">Phone</label>
+              <input type="tel" id="tel" name="tel" required />
+            </div>
+
+            <div class="form-unit">
+              <label>Preferred Contact Method:</label>
+              <div class="radio-options">
+                <label class="radio-option">
+                  <input
+                    type="radio"
+                    name="contact-method"
+                    value="email"
+                    required
+                  />
+                  <span>Email</span>
+                </label>
+                <label class="radio-option">
+                  <input
+                    type="radio"
+                    name="contact-method"
+                    value="tel"
+                    required
+                  />
+                  <span>Phone</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-unit">
+              <label class="required" for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value=""></option>
+                <option value="Sales">Sales</option>
+                <option value="Pricing">Pricing</option>
+                <option value="Support">Support</option>
+                <option value="Careers">Careers</option>
+              </select>
+            </div>
+
+            <div class="form-unit">
+              <label class="required" for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="form-unit">
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="terms" name="terms" required />
+                <label for="terms"
+                  >I consent to the <a href="#">Terms and Services</a>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-unit">
+              <input class="btn" type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
