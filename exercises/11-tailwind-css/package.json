@@ -1,0 +1,25 @@
+{
+  "name": "11-tailwind-css",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/MAD9013/f2024-w13-tutorial#readme",
+  "bugs": {
+    "url": "https://github.com/MAD9013/f2024-w13-tutorial/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MAD9013/f2024-w13-tutorial.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "sample.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}
