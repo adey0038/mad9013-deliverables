@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+	@theme {
+		/* define color scheme here */
+		--color-primary: #23272e;
+    --color-primary-light:#303641;
+    --color-primary-dark:#13161a;
+		--color-secondary: #387bb2;
+		--color-accent:#93d8a7;
+    --color-accent-light:#d4f1db;
+    --color-secondary-dark: #2c6593;
+    --color-accent:#97c278;
+    --color-red:#d86972;
+    --color-orange: #bb8b5e;
+    --color-purple: #c678dd;
+    --color-white: #fff;
+    --font-form: "Noto Sans", sans-serif;
+		--font-display: Kalam, sans-serif; 
+		--font-menu: Roboto, sans-serif;
+    --font-body: Roboto, sans-serif;
+	}
+}
+
+.form-content {
+  @apply bg-accent font-form;
+}
+
+@layer base {
+  *:focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-secondary;
+  }
+
+  html {
+    @apply font-body;
+  }
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-bold;
+  }
+  h3 {
+    @apply text-2xl font-bold uppercase;
+  }
+  h4 {
+    @apply text-xl font-bold;
+  }
+  h5 {
+    @apply text-lg font-bold;
+  }
+  h6 {
+    @apply text-base font-bold;
+  }
+
+  a {
+    @apply transition hover:text-accent focus:text-accent;
+  }
+
+  label {
+    @apply mb-1 block w-full font-bold uppercase tracking-wide;
+  }
+
+  input:where(
+      [type="text"],
+      [type="number"],
+      [type="email"],
+      [type="tel"],
+      [type="date"],
+      [type="time"],
+      [type="password"],
+      [type="search"]
+    ) {
+    @apply block w-full rounded p-2;
+  }
+}
+
+@layer components {
+  .hero {
+    background-image: url("./../images/banner-1.jpg");
+  }
+
+  .btn {
+    @apply inline-block rounded-md border-2 border-secondary bg-secondary px-[1.5em] py-[0.5em] text-center font-bold uppercase tracking-wider text-white no-underline transition hover:border-accent hover:bg-accent hover:text-primary focus:border-accent focus:bg-accent focus:text-primary;
+  }
+
+  .btn--outline {
+    @apply bg-transparent text-secondary hover:border-secondary-dark hover:bg-secondary-dark hover:text-white focus:border-secondary-dark focus:bg-secondary-dark focus:text-white;
+  }
+}

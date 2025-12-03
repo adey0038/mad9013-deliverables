@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Bike Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+  </head>
+  <body id="page">
+    <ul>
+      <li>
+        <a
+          class="absolute -top-40 left-3 rounded bg-secondary px-6 py-2 text-white shadow focus:top-3 focus:text-white"
+          href="#nav"
+        >
+          Skip to main navigation
+        </a>
+      </li>
+      <li>
+        <a
+          class="absolute -top-40 left-3 rounded bg-secondary px-6 py-2 text-white shadow focus:top-3 focus:text-white"
+          href="#main"
+        >
+          Skip to main content
+        </a>
+      </li>
+    </ul>
+
+    <header class="border-t-4 border-accent bg-primary px-[20rem]">
+      <div
+        class="flex flex-col gap-3 lg:container md:flex-row md:items-center md:justify-between md:gap-6 md:px-6 md:text-left"
+      >
+        <h1 class="text-xl">
+          <a
+            href="./"
+            class="flex items-center justify-center gap-3 p-3 text-white md:p-0"
+          >
+            <i class="material-symbols-outlined text-3xl leading-none">
+              pedal_bike
+            </i>
+            The Bike Club
+          </a>
+        </h1>
+        <nav id="nav">
+          <ul class="flex flex-col text-center md:flex-row">
+            <li>
+              <a
+                href="./bikes/grey-fixie.html"
+                class="block p-3 text-white hover:bg-accent hover:text-white focus:bg-accent focus:text-white md:p-6"
+              >
+                Bikes
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block p-3 text-white hover:bg-accent hover:text-white focus:bg-accent focus:text-white md:p-6"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="./form/form.html"
+                class="block p-3 text-white hover:bg-accent hover:text-white focus:bg-accent focus:text-white md:p-6"
+              >
+                Join Now
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <header
+        class="hero bg-slate-500 bg-cover bg-center text-white bg-blend-multiply"
+      >
+        <div
+          class="grid min-h-[60vh] grid-cols-12 items-center gap-6 px-6 py-[6rem] lg:container"
+        >
+          <div class="col-span-full lg:col-span-8">
+            <h2 class="mb-3">Make New Connections!</h2>
+            <p class="mb-6 text-xl">
+              Join the Bike Club to meet new people and find new riders for
+              life!
+            </p>
+            <a href="#" class="btn text-xl">Join Now</a>
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <div class="px-6 py-[6rem] lg:container">
+          <h2 class="col-span-full">Available Bikes</h2>
+
+          <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <li class="flex @container">
+              <div class="flex flex-col rounded-xl shadow @md:flex-row">
+                <div class="flex @md:flex-1">
+                  <img
+                    class="object-cover @md:aspect-square"
+                    src="./images/bike-1.jpg"
+                    alt="A beautiful grey fixie bike."
+                  />
+                </div>
+                <div class="flex grow flex-col p-4 @md:flex-1">
+                  <h3 class="mb-3 text-xl">Grey Fixie</h3>
+                  <p class="mb-4 grow">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a class="btn mb-3 w-full" href="#">Buy Now</a>
+                  <a
+                    class="btn btn--outline w-full"
+                    href="./bikes/grey-fixie.html"
+                  >
+                    Learn More
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="flex @container">
+              <div class="flex flex-col rounded-xl shadow @md:flex-row">
+                <div class="flex @md:flex-1">
+                  <img
+                    class="object-cover @md:aspect-square"
+                    src="./images/bike-2.jpg"
+                    alt="A beautiful black road bike."
+                  />
+                </div>
+                <div class="flex grow flex-col p-4 @md:flex-1">
+                  <h3 class="mb-3 text-xl">Black Road</h3>
+                  <p class="mb-4 grow">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content. However this is longer
+                    than the others
+                  </p>
+                  <a class="btn mb-3 w-full" href="#">Buy Now</a>
+                  <a class="btn btn--outline w-full" href="#">Learn More</a>
+                </div>
+              </div>
+            </li>
+            <li class="flex @container">
+              <div class="flex flex-col rounded-xl shadow @md:flex-row">
+                <div class="flex @md:flex-1">
+                  <img
+                    class="object-cover @md:aspect-square"
+                    src="./images/bike-3.jpg"
+                    alt="A beautiful yellow and purple fixie bike."
+                  />
+                </div>
+                <div class="flex grow flex-col p-4 @md:flex-1">
+                  <h3 class="mb-3 text-xl">Purple Fixie</h3>
+                  <p class="mb-4 grow">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a class="btn mb-3 w-full" href="#">Buy Now</a>
+                  <a class="btn btn--outline w-full" href="#">Learn More</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="bg-slate-300">
+        <div
+          class="grid grid-cols-1 items-center gap-12 px-6 py-[6rem] lg:container md:grid-cols-3 lg:grid-cols-2"
+        >
+          <div class="overflow-hidden rounded-full shadow">
+            <img
+              src="./images/bike-trip.jpg"
+              alt="Cyclist on a mountain road."
+            />
+          </div>
+
+          <div class="md:col-span-2 lg:col-span-1">
+            <h2 class="mb-3">The Bike Club Adventure Series</h2>
+            <p class="mb-6 text-lg">
+              This year the Bike Club Adventure series will be cycling through
+              the Rockies! Join the club to learn how your can participate.
+            </p>
+            <a class="btn text-lg" href="./form/form.html">Join Now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary text-white px-[20rem]">
+      <div class="grid gap-6 px-6 py-12 lg:container md:grid-cols-2">
+        <div>
+          <a class="flex items-center gap-3 text-xl font-bold" href="/">
+            <i class="material-symbols-outlined text-3xl leading-none"
+              >pedal_bike</i
+            >
+            The Bike Club
+          </a>
+        </div>
+
+        <div>
+          <h2 class="text-xl">Contact</h2>
+          <ul class="grid gap-3">
+            <li>
+              <a href="tel:6131234567">613.123.4567</a>
+            </li>
+            <li>
+              <a class href="mailto:hello@thebikeclub.ca"
+                >hello@thebikeclub.ca</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <address class="not-italic">
+                  123 Fake St<br />
+                  Ottawa, ON A1B 2C3
+                </address>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-primary-dark">
+        <ul class="container flex flex-wrap justify-center gap-6 py-3">
+          <li>
+            <small class="text-sm">&copy; 2024 MAD9013</small>
+          </li>
+          <li>
+            <a class="text-sm hover:text-accent focus:text-accent" href="#"
+              >Privacy Policy</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <a
+      href="#page"
+      id="to-top"
+      class="fixed -bottom-2 right-6 inline-block rounded-t-lg bg-secondary px-2 pb-4 pt-2 text-white transition-all hover:bottom-0 hover:text-white focus:bottom-0 focus:text-white"
+    >
+      To Top
+    </a>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
