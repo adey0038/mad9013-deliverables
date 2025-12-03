@@ -391,6 +391,9 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
+  .px-\[20rem\] {
+    padding-inline: 20rem;
+  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -441,10 +444,6 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-  }
-  .font-normal {
-    --tw-font-weight: var(--font-weight-normal);
-    font-weight: var(--font-weight-normal);
   }
   .text-secondary {
     color: var(--color-secondary);
